@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SHRINIVAS.AI — Shrinivas Donta, AI Digital Creator & Prompt Engineer creating AI images, songs, videos, designs, prompts, branding and social-media content.">
+<meta name="author" content="Shrinivas Donta">
+<meta name="theme-color" content="#fdf7ef">
+<title>SHRINIVAS.AI — AI Digital Creator & Prompt Engineer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{--bg:#fdf7ef;--bg2:#ffffff;--ink:#17130f;--white:#17130f;--muted:#6d6357;--line:rgba(23,19,15,.13);--blue:#0f8f5c;--blue2:#12855a;--orange:#ff6a00;--orange2:#ffa62b;--green:#12855a;--green2:#25b57e;--max:1200px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--white);line-height:1.6;overflow-x:hidden;background:radial-gradient(circle at 10% 5%,rgba(255,106,0,.2),transparent 30%),radial-gradient(circle at 90% 15%,rgba(18,133,90,.2),transparent 30%),radial-gradient(circle at 50% 100%,rgba(255,166,43,.14),transparent 35%),var(--bg)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;background-image:linear-gradient(rgba(23,19,15,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(23,19,15,.035) 1px,transparent 1px);background-size:55px 55px;z-index:-1}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),92%);margin:auto}section{padding:105px 0}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,247,239,.78);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{display:inline-flex;align-items:center;gap:9px;font-family:"Space Grotesk";white-space:nowrap}.logo img{width:42px;height:42px;object-fit:cover;border-radius:12px;border:1px solid var(--line);box-shadow:0 6px 20px rgba(23,19,15,.12)}.logo span{font-weight:700;font-size:.78rem;letter-spacing:.17em;color:#4a4038;text-transform:uppercase}
+.navlinks{display:flex;gap:23px;font-size:.8rem;color:#5c5248;font-weight:700}.navlinks a:hover{color:#ff6a00}.menu{display:none;background:none;border:0;color:var(--ink);font-size:1.5rem}
+.hero{min-height:100vh;padding-top:145px;display:grid;align-items:center}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}
+.eyebrow,.tag{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.6);font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.pulse{width:8px;height:8px;border-radius:50%;background:#16a34a;box-shadow:0 0 15px rgba(22,163,74,.7)}
+h1,h2,h3{font-family:"Space Grotesk"}h1{font-size:clamp(3.2rem,7.2vw,7.1rem);line-height:.92;letter-spacing:-.075em;margin:25px 0}.gradient{background:linear-gradient(105deg,#17130f,#ff6a00,#12855a,#ffa62b,#17130f);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite}@keyframes shine{to{background-position:200% center}}
+.hero p{max-width:650px;color:var(--muted);font-size:1.08rem}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 19px;border-radius:15px;border:1px solid var(--line);font-weight:800;font-size:.84rem;transition:.25s}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(110deg,var(--blue2),var(--green2));border:0;color:#fff}.orange{background:linear-gradient(110deg,var(--orange),var(--orange2));color:#1a1512;border:0}.ghost{background:rgba(255,255,255,.65)}
+.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:38px;color:#5c5248;font-size:.77rem}.hero-meta strong{display:block;color:var(--ink);font:700 1.35rem "Space Grotesk"}
+.ai-orb{width:min(480px,90vw);aspect-ratio:1;margin:auto;position:relative;display:grid;place-items:center}.ai-orb:before{content:"";position:absolute;inset:8%;border:1px solid rgba(18,133,90,.35);border-radius:50%;box-shadow:0 0 80px rgba(255,106,0,.14) inset}.ring{position:absolute;border:1px solid rgba(23,19,15,.13);border-radius:50%}.r1{inset:3%;border-left-color:var(--orange);border-right-color:var(--green);animation:spin 18s linear infinite}.r2{inset:18%;border-top-color:var(--green);border-bottom-color:var(--orange2);animation:spin 12s linear infinite reverse}@keyframes spin{to{transform:rotate(360deg)}}
+.core{width:42%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff6ec,#ffa62b 42%,#e05a00 74%);box-shadow:0 0 45px rgba(255,106,0,.55),0 0 120px rgba(255,166,43,.35);z-index:2}.core:after{content:"AI";position:absolute;inset:0;display:grid;place-items:center;font:700 4rem "Space Grotesk";color:#fff;text-shadow:0 0 25px rgba(255,255,255,.85)}
+.float{position:absolute;padding:10px 13px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);font-size:.65rem;font-weight:800;box-shadow:0 10px 26px rgba(23,19,15,.08)}.f1{top:11%;left:2%}.f2{right:-1%;top:27%}.f3{left:4%;bottom:18%}.f4{right:7%;bottom:7%}
+.section-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.kicker{color:#c95000;font-size:.7rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}h2{font-size:clamp(2.3rem,4.5vw,4.2rem);line-height:.98;letter-spacing:-.06em;margin-top:8px}.section-top p{max-width:470px;color:var(--muted)}
+.glass{background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(255,255,255,.62));border:1px solid var(--line);border-radius:28px;box-shadow:0 25px 60px rgba(23,19,15,.08);backdrop-filter:blur(18px)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}.about-card{padding:34px}.about-card p{color:var(--muted);margin:14px 0}.mantra{font:600 1.7rem/1.2 "Space Grotesk"}.mantra span{color:#e05a00}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:24px;min-height:185px;transition:.25s}.skill:hover{transform:translateY(-5px);border-color:rgba(18,133,90,.45);box-shadow:0 30px 60px rgba(23,19,15,.12)}.skill-icon{font-size:1.7rem;margin-bottom:24px}.skill h3{margin-bottom:6px}.skill p{font-size:.8rem;color:var(--muted)}
+.creations{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.creation{min-height:320px;padding:27px;overflow:hidden;position:relative}.creation:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 80% 20%,rgba(255,106,0,.2),transparent 40%),linear-gradient(145deg,#fff,#fff1e2)}.creation:nth-child(2):before{background:radial-gradient(circle at 20% 20%,rgba(18,133,90,.22),transparent 40%),linear-gradient(145deg,#fff,#e9f8f0)}.creation:nth-child(3):before{background:radial-gradient(circle at 70% 80%,rgba(255,166,43,.35),transparent 40%),linear-gradient(145deg,#fff,#fff7e8)}.creation h3{font-size:1.7rem;margin:110px 0 8px}.creation p{color:#6d6357;font-size:.82rem}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.service{padding:29px;display:flex;gap:18px}.icon{width:48px;height:48px;flex:0 0 48px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(255,106,0,.18),rgba(18,133,90,.16));font-size:1.2rem}.service p{color:var(--muted);font-size:.83rem}
+.portfolio{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px}.port{min-height:240px;padding:28px;position:relative;overflow:hidden}.port.large{grid-row:span 2;min-height:496px}.port:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(145deg,rgba(255,106,0,.18),transparent 55%),linear-gradient(315deg,rgba(18,133,90,.16),transparent 55%)}.port h3{font-size:1.5rem;margin-top:95px}.port.large h3{font-size:2.35rem;margin-top:290px}.port p{font-size:.78rem;color:var(--muted)}
+.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.social{padding:22px;text-align:center}.social b{font:600 1.05rem "Space Grotesk"}.social small{display:block;color:var(--muted);margin-top:4px}
+.contact{padding:48px;background:linear-gradient(120deg,rgba(255,106,0,.16),rgba(18,133,90,.14))}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:end}.contact p{color:#5c5248;max-width:620px;margin:18px 0}.contact-links{display:grid;gap:10px}.contact-links a{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.6);font-weight:700;font-size:.82rem}.contact-links a:hover{border-color:rgba(18,133,90,.55);background:rgba(255,255,255,.9)}
+footer{padding:32px 0;border-top:1px solid var(--line);color:#7d7266;font-size:.74rem}footer .container{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.creations{grid-template-columns:1fr 1fr}.portfolio{grid-template-columns:1fr 1fr}.port.large{grid-row:auto;min-height:360px}.port.large h3{margin-top:170px}}
+@media(max-width:650px){section{padding:78px 0}.logo span{font-size:.66rem;letter-spacing:.11em}.logo img{width:36px;height:36px;border-radius:10px}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:rgba(253,247,239,.98);padding:20px 5%;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero-grid{gap:42px}h1{font-size:clamp(3rem,17vw,5rem)}.skills,.creations,.services,.portfolio,.social-grid{grid-template-columns:1fr}.section-top{display:block}.section-top p{margin-top:14px}.creation{min-height:275px}.creation h3{margin-top:90px}.port.large{min-height:300px}.port.large h3{margin-top:145px}.contact{padding:31px 21px}footer .container{display:block}.hero-meta{gap:16px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="container nav-inner">
+<a class="logo" href="#home"><img src="assets/logo.jpg" alt="SHRINIVAS.AI logo" width="42" height="42"><span>Shrinivas.AI</span></a>
+<nav class="navlinks" id="navlinks">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">AI Skills</a><a href="#creations">Creations</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#social">Social Media</a><a href="#contact">Contact</a>
+</nav><button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div class="reveal"><div class="eyebrow"><i class="pulse"></i> AI DIGITAL CREATOR · PROMPT ENGINEER</div>
+<h1>One Creator.<br><span class="gradient">Unlimited AI Possibilities.</span></h1>
+<p>I create AI images, songs, videos, designs, prompts, branding and complete social-media content — turning ideas into visual stories, sound and experiences.</p>
+<div class="cta"><a class="btn primary" href="#contact">Hire Me ↗</a><a class="btn orange" href="#creations">View Creations</a><a class="btn ghost" href="#skills">Create With AI</a></div>
+<div class="hero-meta"><div><strong>10+</strong>Years creative experience</div><div><strong>50+</strong>Original stories</div><div><strong>100+</strong>Different projects</div></div></div>
+<div class="ai-orb reveal"><div class="ring r1"></div><div class="ring r2"></div><div class="core"></div><div class="float f1">✦ AI IMAGES</div><div class="float f2">♫ AI SONGS</div><div class="float f3">◈ AI VIDEO</div><div class="float f4">⌁ PROMPTS</div></div>
+</div></section>
+
+<section id="about"><div class="container"><div class="section-top reveal"><div><span class="kicker">01 · About</span><h2>Ideas in.<br>Possibilities out.</h2></div><p>A multi-creator workflow built around imagination, AI tools and hands-on creative execution.</p></div>
+<div class="about-grid"><article class="glass about-card reveal"><div class="mantra">I don't just use AI.<br>I <span>create with it.</span></div><p>My creative journey combines original writing, storytelling, visual creation, music, video editing, prompt engineering and social-media content.</p><p>From a simple concept to a finished creative asset, I bring together ideas, prompts, design direction and production.</p></article>
+<article class="glass about-card reveal"><span class="kicker">Creative foundation</span><p><b>Writing & storytelling</b><br>10+ years creating original song lyrics and stories for YouTube, private projects and social content.</p><p><b>Digital creation</b><br>AI-powered images, songs, videos, designs and content concepts shaped around the project goal.</p><p><b>Freelance mindset</b><br>Available for individual assignments, creative collaborations and complete content projects.</p></article></div></div></section>
+
+<section id="skills"><div class="container"><div class="section-top reveal"><div><span class="kicker">02 · AI Skills</span><h2>One toolkit.<br>Many creative worlds.</h2></div><p>Creative roles I bring together to take a project from idea to publishable content.</p></div>
+<div class="skills">
+<article class="glass skill reveal"><div class="skill-icon">🖼️</div><h3>AI Image Maker</h3><p>Concepts, visual directions, image prompts and creative image generation.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">🎵</div><h3>AI Song Creator</h3><p>Original lyric ideas, song concepts and AI-assisted music workflows.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">🎬</div><h3>AI Video Creator</h3><p>Video concepts, scenes, storytelling, AI visuals and editing workflows.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">⌁</div><h3>Prompt Engineer</h3><p>Structured prompts designed to turn creative intent into repeatable outputs.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">✦</div><h3>AI Designer</h3><p>Creative layouts, visual systems, concepts and digital design direction.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">✍️</div><h3>Story & Lyrics</h3><p>Original stories and song lyrics shaped for emotion, audience and format.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">📱</div><h3>Social Creator</h3><p>Content concepts and assets for social platforms and creator channels.</p></article>
+<article class="glass skill reveal"><div class="skill-icon">🚀</div><h3>Creative Direction</h3><p>Connecting prompts, visuals, writing, video and branding into one concept.</p></article>
+</div></div></section>
+
+<section id="creations"><div class="container"><div class="section-top reveal"><div><span class="kicker">03 · Creations</span><h2>From imagination<br>to creation.</h2></div><p>A snapshot of the creative universe I can build with AI and human storytelling.</p></div>
+<div class="creations"><article class="glass creation reveal"><span class="kicker">01 · VISUAL</span><h3>AI Image Worlds</h3><p>Characters, concepts, cinematic scenes, creative visuals and social-ready artwork.</p></article><article class="glass creation reveal"><span class="kicker">02 · SOUND</span><h3>AI Music & Songs</h3><p>Original lyrics, song concepts and AI-assisted music experiences.</p></article><article class="glass creation reveal"><span class="kicker">03 · MOTION</span><h3>AI Video Stories</h3><p>Short-form concepts, visual storytelling and edited video content.</p></article></div></div></section>
+
+<section id="services"><div class="container"><div class="section-top reveal"><div><span class="kicker">04 · Services</span><h2>Tell me the idea.<br>Let's build it.</h2></div><p>Flexible freelance services for creators, brands, YouTube projects, private work and social media.</p></div>
+<div class="services">
+<article class="glass service reveal"><div class="icon">🧠</div><div><h3>Prompt Engineering</h3><p>Creative prompt development for images, video, writing and AI workflows.</p></div></article>
+<article class="glass service reveal"><div class="icon">🖼️</div><div><h3>AI Image Creation</h3><p>Visual concepts, image generation direction and creative asset development.</p></div></article>
+<article class="glass service reveal"><div class="icon">🎵</div><div><h3>Song & Lyrics</h3><p>Original lyrics and AI-assisted song concepts for creative projects.</p></div></article>
+<article class="glass service reveal"><div class="icon">🎥</div><div><h3>AI Video & Editing</h3><p>AI video concepts plus professional editing for polished content.</p></div></article>
+<article class="glass service reveal"><div class="icon">🎨</div><div><h3>AI Design & Branding</h3><p>Creative identity, design concepts, visuals and branding assets.</p></div></article>
+<article class="glass service reveal"><div class="icon">📲</div><div><h3>Social Media Content</h3><p>Complete creative content concepts and assets for social platforms.</p></div></article>
+</div></div></section>
+
+<section id="portfolio"><div class="container"><div class="section-top reveal"><div><span class="kicker">05 · Portfolio</span><h2>100+ projects.<br>One creative mindset.</h2></div><p>Experience across writing, social media, video editing and digital creative projects.</p></div>
+<div class="portfolio"><article class="glass port large reveal"><span class="kicker">CREATIVE WORK</span><h3>YouTube<br>Projects</h3><p>Song lyrics, stories, visual concepts and edited videos built for creator-focused content.</p></article><article class="glass port reveal"><span class="kicker">WRITING</span><h3>50+ Stories</h3><p>Original story writing across creative formats.</p></article><article class="glass port reveal"><span class="kicker">SOCIAL</span><h3>30+ Projects</h3><p>Social-media creative content and digital assets.</p></article><article class="glass port reveal"><span class="kicker">EXPERIENCE</span><h3>10+ Years</h3><p>Long-term creative writing and content experience.</p></article><article class="glass port reveal"><span class="kicker">PROJECTS</span><h3>100+ Creations</h3><p>Different projects across creative disciplines.</p></article></div></div></section>
+
+<section id="social"><div class="container"><div class="section-top reveal"><div><span class="kicker">06 · Social Media</span><h2>Built for the<br>social-first world.</h2></div><p>Creative support for content that looks, sounds and feels native to digital platforms.</p></div>
+<div class="social-grid"><div class="glass social reveal"><b>Short Videos</b><small>Reels · Shorts · Social</small></div><div class="glass social reveal"><b>Visual Content</b><small>AI Images · Designs</small></div><div class="glass social reveal"><b>Music Content</b><small>Songs · Lyrics · Audio</small></div><div class="glass social reveal"><b>Creator Branding</b><small>Identity · Concepts</small></div></div></div></section>
+
+<section id="contact"><div class="container"><div class="glass contact reveal"><div class="contact-grid"><div><span class="kicker">07 · Contact</span><h2>Have an idea?<br>Let's create it with AI.</h2><p>Ready for freelance projects in AI creation, prompt engineering, writing, design, video and social-media content.</p><div class="cta"><a class="btn orange" href="https://wa.me/918788028640?text=Hello%20Shrinivas%2C%20I%20want%20to%20discuss%20a%20creative%20project." target="_blank" rel="noopener">Chat on WhatsApp ↗</a><a class="btn primary" href="mailto:dshrinivas357@gmail.com?subject=Creative%20Project%20Enquiry">Hire Me ↗</a></div></div>
+<div class="contact-links"><a href="tel:+918788028640">WhatsApp / Phone · 8788028640</a><a href="tel:+917756834410">Phone · 7756834410</a><a href="mailto:dshrinivas357@gmail.com">Email · dshrinivas357@gmail.com</a><a href="https://www.google.com/maps/search/?api=1&query=Mettuguda+Metro+Station+Hyderabad" target="_blank" rel="noopener">📍 Hyderabad · Secunderabad · Mettuguda Metro Station</a></div></div></div></div></section>
+</main>
+
+<footer><div class="container"><span>© <span id="year"></span> SHRINIVAS.AI · Shrinivas Donta — AI Digital Creator & Prompt Engineer</span><span>One Creator — Unlimited AI Possibilities.</span></div></footer>
+<script>
+function toggleNav(){const n=document.getElementById('navlinks'),b=document.querySelector('.menu');const open=n.classList.toggle('open');b.setAttribute('aria-expanded',open)}
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+</body></html>
